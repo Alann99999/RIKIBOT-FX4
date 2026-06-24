@@ -1,0 +1,10 @@
+<launch>
+  <arg name="guard_params_file" default="$(find rikibot)/param/navigation/common/navigation_guard.yaml"/>
+  <arg name="supervisor_params_file" default="$(find rikibot)/param/navigation/common/mapping_supervisor.yaml"/>
+  <node pkg="rikibot" type="navigation_guard.py" name="navigation_guard" output="screen" respawn="true" respawn_delay="2.0">
+    <rosparam file="$(arg guard_params_file)" command="load" />
+  </node>
+  <node pkg="rikibot" type="mapping_supervisor.py" name="mapping_supervisor" output="screen" respawn="true" respawn_delay="2.0">
+    <rosparam file="$(arg supervisor_params_file)" command="load" />
+  </node>
+</launch>

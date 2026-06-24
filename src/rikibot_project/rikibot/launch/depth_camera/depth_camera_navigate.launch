@@ -1,0 +1,15 @@
+<launch>
+  <include file="$(find rikibot)/launch/depth_camera/depth_camera_laser.launch"/>
+
+  <arg name="map_file" default="$(find rikibot)/maps/house.yaml"/>
+
+  <node pkg="map_server" name="map_server"  type="map_server" args="$(arg map_file)" />
+
+
+  <include file="$(find rikibot)/launch/move_base.launch" />
+  <!-- AMCL -->
+  <include file="$(find rikibot)/launch/amcl.launch"/>
+  <node name="multi_mark" pkg="rikibot" type="show_mark.py" output="screen" />
+
+
+</launch>

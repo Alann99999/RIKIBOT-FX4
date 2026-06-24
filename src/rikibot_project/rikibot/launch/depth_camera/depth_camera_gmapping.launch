@@ -1,0 +1,4 @@
+<launch>
+  <include file="$(find rikibot)/launch/depth_camera/depth_camera_laser.launch"/> 
+  <include file="$(find rikibot)/param/slam/slam_gmapping.xml"/> 
+</launch>

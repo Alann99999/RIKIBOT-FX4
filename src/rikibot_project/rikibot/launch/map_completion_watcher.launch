@@ -1,0 +1,6 @@
+<launch>
+  <arg name="watcher_params_file" default="$(find rikibot)/param/navigation/common/map_completion_watcher.yaml"/>
+  <node pkg="rikibot" type="map_completion_watcher.py" name="map_completion_watcher" output="screen" respawn="true" respawn_delay="2.0">
+    <rosparam file="$(arg watcher_params_file)" command="load" />
+  </node>
+</launch>

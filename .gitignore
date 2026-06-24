@@ -1,0 +1,17 @@
+# Catkin build files
+build/
+devel/
+.catkin_workspace
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Map large database files (over GitHub 100MB limit)
+maps/rtabmap_autonomous.db
+
+# OS files
+Thumbs.db
+.DS_Store

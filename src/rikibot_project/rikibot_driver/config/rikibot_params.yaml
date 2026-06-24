@@ -1,0 +1,4 @@
+version: rikibot_foc
+port_name: /dev/rikibase #设备端口
+baud_rate: 115200       #通信波特率，固定115200
+control_rate: 100                #底盘控制频率  

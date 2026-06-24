@@ -1,0 +1,10 @@
+<launch>
+    <param name="use_sim_time" value="false"/>
+
+
+    <!-- 启动xtark_driver驱动包 -->
+    <node name="rikibot_driver" pkg="rikibot_driver" type="rikibot_driver" output="screen" respawn="true">
+        <rosparam file="$(find rikibot_driver)/config/rikibot_params.yaml" command="load"/>
+    </node>
+
+</launch>

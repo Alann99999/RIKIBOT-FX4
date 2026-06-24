@@ -1,0 +1,10 @@
+status_publish_hz: 1.0
+command_linear_threshold: 0.05
+command_angular_threshold: 0.20
+completion_window: 180.0
+completion_max_known_delta: 20
+completion_required_cycles: 8
+idle_completion_timeout: 60.0
+min_completion_known_ratio: 15.0
+active_goal_timeout: 45.0
+map_save_path: /home/rikibot/catkin_ws/maps/whole_house

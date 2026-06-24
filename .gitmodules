@@ -1,0 +1,117 @@
+[submodule "src/camera_umd"]
+	path = src/camera_umd
+	url = https://github.com/ktossell/camera_umd.git
+[submodule "src/depth_camera/ros_astra_launch"]
+	path = src/depth_camera/ros_astra_launch
+	url = https://github.com/orbbec/ros_astra_launch.git
+[submodule "src/imu_calib"]
+	path = src/imu_calib
+	url = https://gitee.com/rikibot/imu_calib.git
+[submodule "src/jetson_camera"]
+	path = src/jetson_camera
+	url = https://gitee.com/rikibot/jetson_camera
+[submodule "src/m-explore"]
+	path = src/m-explore
+	url = https://github.com/hrnr/m-explore.git
+[submodule "src/rikibot_project/rikibot_ai_speech"]
+	path = src/rikibot_project/rikibot_ai_speech
+	url = https://gitee.com/rikibot/rikibot_ai_speech.git
+[submodule "src/rikibot_project/rikibot_ar_track"]
+	path = src/rikibot_project/rikibot_ar_track
+	url = https://gitee.com/rikibot/rikibot_ar_track.git
+[submodule "src/rikibot_project/rikibot_autorace"]
+	path = src/rikibot_project/rikibot_autorace
+	url = https://gitee.com/rikibot/rikibot_autorace.git
+[submodule "src/rikibot_project/rikibot_auto_driver"]
+	path = src/rikibot_project/rikibot_auto_driver
+	url = https://gitee.com/rikibot/rikibot_auto_driver.git
+[submodule "src/rikibot_project/rikibot_clean"]
+	path = src/rikibot_project/rikibot_clean
+	url = https://gitee.com/rikibot/rikibot_clean.git
+[submodule "src/rikibot_project/rikibot_description"]
+	path = src/rikibot_project/rikibot_description
+	url = https://gitee.com/rikibot/rikibot_description.git
+[submodule "src/rikibot_project/rikibot_follower"]
+	path = src/rikibot_project/rikibot_follower
+	url = https://gitee.com/rikibot/rikibot_follower.git
+[submodule "src/rikibot_project/rikibot_gazebo"]
+	path = src/rikibot_project/rikibot_gazebo
+	url = https://gitee.com/rikibot/rikibot_gazebo_ppt.git
+[submodule "src/rikibot_project/rikibot_kcf"]
+	path = src/rikibot_project/rikibot_kcf
+	url = https://gitee.com/rikibot/rikibot_kcf.git
+[submodule "src/rikibot_project/rikibot_lidar_follower"]
+	path = src/rikibot_project/rikibot_lidar_follower
+	url = https://github.com/ykevin/rikibot_lidar_follower.git
+[submodule "src/rikibot_project/rikibot_line_follower"]
+	path = src/rikibot_project/rikibot_line_follower
+	url = https://gitee.com/rikibot/rikibot_line_follower.git
+[submodule "src/rikibot_project/rikibot_mediapipe"]
+	path = src/rikibot_project/rikibot_mediapipe
+	url = https://gitee.com/rikibot/rikibot_mediapipe.git
+[submodule "src/rikibot_project/rikibot_multi"]
+	path = src/rikibot_project/rikibot_multi
+	url = https://gitee.com/rikibot/rikibot_multi.git
+[submodule "src/rikibot_project/rikibot_nav"]
+	path = src/rikibot_project/rikibot_nav
+	url = https://github.com/ykevin/rikibot_nav.git
+[submodule "src/rikibot_project/rikibot_object_detect"]
+	path = src/rikibot_project/rikibot_object_detect
+	url = https://gitee.com/rikibot/rikibot_object_detect.git
+[submodule "src/rikibot_project/rikibot_object_follower"]
+	path = src/rikibot_project/rikibot_object_follower
+	url = https://gitee.com/rikibot/rikibot_object_follower.git
+[submodule "src/rikibot_project/rikibot_object_plate"]
+	path = src/rikibot_project/rikibot_object_plate
+	url = https://gitee.com/rikibot/rikibot_object_plate.git
+[submodule "src/rikibot_project/rikibot_object_point"]
+	path = src/rikibot_project/rikibot_object_point
+	url = https://gitee.com/rikibot/rikibot_object_point.git
+[submodule "src/rikibot_project/rikibot_pid"]
+	path = src/rikibot_project/rikibot_pid
+	url = https://github.com/ykevin/rikibot_pid.git
+[submodule "src/rikibot_project/rikibot_slam_3d"]
+	path = src/rikibot_project/rikibot_slam_3d
+	url = https://gitee.com/rikibot/rikibot_slam_3d.git
+[submodule "src/rikibot_project/rikibot_tracker_servo"]
+	path = src/rikibot_project/rikibot_tracker_servo
+	url = https://github.com/ykevin/rikibot_tracker_servo.git
+[submodule "src/rikibot_project/rikibot_x7_grasp"]
+	path = src/rikibot_project/rikibot_x7_grasp
+	url = https://gitee.com/rikibot/rikibot_x7_grasp.git
+[submodule "src/rikibot_project/rikibot_xarm"]
+	path = src/rikibot_project/rikibot_xarm
+	url = https://gitee.com/rikibot/rikibot_xarm.git
+[submodule "src/rikibot_project/rikibot_yolov5"]
+	path = src/rikibot_project/rikibot_yolov5
+	url = https://gitee.com/rikibot/rikibot_yolov5.git
+[submodule "src/rikibot_project/rikibot_yolov5_trt"]
+	path = src/rikibot_project/rikibot_yolov5_trt
+	url = https://gitee.com/rikibot/rikibot_yolov5_trt.git
+[submodule "src/rikibot_project/rikibot_yolo_detection"]
+	path = src/rikibot_project/rikibot_yolo_detection
+	url = https://gitee.com/rikibot/rikibot_yolo_detection.git
+[submodule "src/rikibot_project/riki_msgs"]
+	path = src/rikibot_project/riki_msgs
+	url = https://gitee.com/rikibot/riki_msgs.git
+[submodule "src/robot_arm"]
+	path = src/robot_arm
+	url = https://gitee.com/rikibot/robot_arm.git
+[submodule "src/robot_localization"]
+	path = src/robot_localization
+	url = https://github.com/cra-ros-pkg/robot_localization.git
+[submodule "src/robot_tutorials"]
+	path = src/robot_tutorials
+	url = https://gitee.com/rikibot/robot_tutorials.git
+[submodule "src/rrt_exploration"]
+	path = src/rrt_exploration
+	url = https://gitee.com/rikibot/rrt_exploration.git
+[submodule "src/rtimulib_ros"]
+	path = src/rtimulib_ros
+	url = https://gitee.com/rikibot/rtimulib_ros.git
+[submodule "src/vision_opencv"]
+	path = src/vision_opencv
+	url = https://github.com/ros-perception/vision_opencv
+[submodule "src/xf_mic_asr_offline"]
+	path = src/xf_mic_asr_offline
+	url = https://gitee.com/rikibot/xf_mic_asr_offline.git

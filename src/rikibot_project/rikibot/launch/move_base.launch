@@ -1,0 +1,21 @@
+<launch>
+  <arg name="nav_type" default="$(optenv NAV_PATH dwa)"/>
+  <arg name="robot_model" default="$(optenv RIKIMODEL fx4)"/>
+  <arg name="base_type" default="$(optenv RIKIBASE diff)"/>
+  <arg name="costmap_params_file" default="$(find rikibot)/param/navigation/common/costmap_$(arg robot_model)_params.yaml"/>
+  <arg name="planner_params_file" default="$(find rikibot)/param/navigation/$(arg nav_type)/$(arg nav_type)_$(arg base_type)_planner_params_slow.yaml"/>
+  <arg if="$(eval arg('nav_type') == 'dwa')" name="path_planner"   default="dwa_local_planner/DWAPlannerROS"/>
+  <arg if="$(eval arg('nav_type') == 'teb')" name="path_planner"   default="teb_local_planner/TebLocalPlannerROS"/>
+
+  <!--  ************** Navigation ***************  -->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+      <param name="base_local_planner" value="$(arg path_planner)" />
+      <rosparam file="$(arg costmap_params_file)" command="load" ns="global_costmap" />
+      <rosparam file="$(arg costmap_params_file)" command="load" ns="local_costmap" />
+      <rosparam file="$(find rikibot)/param/navigation/common/local_costmap_params.yaml" command="load" />
+      <rosparam file="$(find rikibot)/param/navigation/common/global_costmap_params.yaml" command="load" />
+      <rosparam file="$(find rikibot)/param/navigation/common/move_base_params.yaml" command="load" />
+      <rosparam file="$(arg planner_params_file)" command="load" />
+  </node>
+
+</launch>

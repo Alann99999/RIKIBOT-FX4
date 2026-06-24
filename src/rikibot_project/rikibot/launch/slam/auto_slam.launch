@@ -1,0 +1,15 @@
+<launch>
+  <arg name="robot_model" default="fx4" />
+  <arg name="base_type" default="diff" />
+
+  <include file="$(find rplidar_ros)/launch/rplidar_c1.launch" />
+  <include file="$(find rikibot)/param/slam/slam_gmapping.xml" />
+  <include file="$(find rikibot)/launch/move_base.launch">
+    <arg name="robot_model" value="$(arg robot_model)" />
+    <arg name="base_type" value="$(arg base_type)" />
+  </include>
+  <include file="$(find explore_lite)/launch/explore_costmap.launch" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rikibot)/rviz/slam.rviz" required="true" />
+  <node pkg="rikibot" type="emergency_stop_service.py" name="emergency_stop_service" output="screen" />
+
+</launch>
